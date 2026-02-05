@@ -1,70 +1,106 @@
-KanMind - DRF Backend
+# 🧠 KanMind – DRF Backend
 
-KanMind ist ein Backend-Service, entwickelt mit Django REST Framework (DRF), um eine effiziente Verwaltung von Aufgaben und Projekten zu ermöglichen. Mit der Anwendung können Benutzer ihre Arbeitsprozesse nach dem Kanban-Prinzip organisieren, Aufgaben zuweisen und den Fortschritt verfolgen.
+**KanMind** ist eine Backend-Anwendung auf Basis von **Django REST Framework (DRF)**.  
+Sie stellt eine leistungsfähige REST-API für **Task- und Projektmanagement nach dem Kanban-Prinzip** bereit und unterstützt Teams dabei, ihre Arbeitsabläufe effizient zu organisieren.
 
-Funktionen
+---
 
-Benutzerverwaltung: Benutzer können sich registrieren und anmelden. Der Zugriff wird durch rollenbasierte Berechtigungen kontrolliert.
+## 🚀 Features
 
-Projekt- und Aufgabenverwaltung: Erstellen, Bearbeiten und Löschen von Projekten und Aufgaben.
+- 🔐 **Benutzerverwaltung**
+  - Registrierung & Login
+  - Rollenbasierte Zugriffssteuerung
 
-Priorisierung und Kategorisierung: Aufgaben können nach Dringlichkeit und Kategorie sortiert werden.
+- 📁 **Projektmanagement**
+  - Projekte erstellen, bearbeiten und löschen
 
-REST API: Die API bietet eine einfache Integration mit Frontend-Anwendungen.
+- ✅ **Aufgabenverwaltung**
+  - Aufgaben anlegen, aktualisieren und entfernen
+  - Zuordnung zu Projekten
 
+- 🏷️ **Priorisierung & Kategorisierung**
+  - Aufgaben nach Dringlichkeit und Kategorie organisieren
 
-Installation
+- 🔌 **REST API**
+  - Ideal für die Anbindung von Frontend-Anwendungen (z. B. React, Angular, Vue)
 
-Repository klonen:
+---
 
+## ⚙️ Installation
+
+### 1️⃣ Repository klonen
+
+```bash
 git clone https://github.com/alwaysMercy/Backend/tree/main/KanMind-Backend
 cd KanMind-Backend
+```
 
+### 2️⃣ Virtuelle Umgebung erstellen & aktivieren
 
-Virtuelle Umgebung erstellen:
-
+```bash
 python -m venv venv
-source venv/bin/activate  # Auf Windows: venv\Scripts\activate
+source venv/bin/activate
+```
 
+**Windows:**
+```bash
+venv\Scripts\activate
+```
 
-Abhängigkeiten installieren:
+### 3️⃣ Abhängigkeiten installieren
 
+```bash
 pip install -r requirements.txt
+```
 
+### 4️⃣ Datenbank migrieren
 
-Datenbank-Migrationen durchführen:
-
+```bash
 python manage.py migrate
+```
 
+### 5️⃣ Entwicklungsserver starten
 
-Entwicklungsserver starten:
-
+```bash
 python manage.py runserver
+```
 
-API Endpoints
+Der Server läuft anschließend unter:  
+👉 **http://127.0.0.1:8000/**
 
-Die API bietet die folgenden Endpoints:
+---
 
-/api/auth/register/: Benutzerregistrierung
+## 📡 API Endpoints
 
-/api/auth/login/: Benutzeranmeldung
+| Endpoint | Beschreibung |
+|--------|--------------|
+| `/api/auth/register/` | Benutzerregistrierung |
+| `/api/auth/login/` | Benutzeranmeldung |
+| `/api/projects/` | Projektverwaltung |
+| `/api/tasks/` | Aufgabenverwaltung |
 
-/api/projects/: Verwaltung von Projekten (Erstellen, Bearbeiten, Löschen)
+📘 **API-Dokumentation**  
+Die API kann über **Swagger** oder **Postman** getestet werden.
 
-/api/tasks/: Verwaltung von Aufgaben (Erstellen, Bearbeiten, Löschen)
+---
 
-Eine detaillierte Dokumentation der API-Endpunkte kann mit Swagger oder Postman aufgerufen werden.
+## 🧪 Tests ausführen
 
-Tests
-
-Die Tests können mit folgendem Befehl ausgeführt werden:
-
+```bash
 python manage.py test
+```
 
-Mitwirken
+---
 
-Beiträge sind immer willkommen! Um Änderungen vorzuschlagen, erstelle einfach einen Pull Request. Achte darauf, dass dein Code gut dokumentiert ist und alle Tests bestehen.
+## 🤝 Mitwirken
 
-Lizenz
+Beiträge sind herzlich willkommen!  
+Bitte erstelle einen **Pull Request** und stelle sicher, dass:
+- der Code sauber dokumentiert ist
+- alle Tests erfolgreich durchlaufen
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert.
+---
+
+## 📝 Lizenz
+
+Dieses Projekt steht unter der **MIT-Lizenz**.
